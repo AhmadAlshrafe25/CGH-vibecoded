@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-navy-dark: #0B192C;
+  --brand-navy-card: #1B2A4A;
+  --brand-cream-light: #FDFBF7;
+  --brand-cream-warm: #F5F0E8;
+  --brand-accent-gold: #C5A880;
+  --brand-accent-olive: #3E4D34;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B192C;
+  color: #FDFBF7;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0B192C;
+  color: #FDFBF7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom scrollbar matching Navy and Gold */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B192C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B2A4A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}

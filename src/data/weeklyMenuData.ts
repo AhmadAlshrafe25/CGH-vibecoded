@@ -1,0 +1,250 @@
+import { WeeklyMenu } from '@/types/menu';
+
+export const weeklyMenus: WeeklyMenu[] = [
+  {
+    id: 'edition-42',
+    weekNumber: 42,
+    seasonName: 'Autumn Harvest Edition',
+    activeFridayDate: '2026-10-23',
+    activeFridayFormatted: 'Friday, October 23, 2026',
+    themeSummary: 'Celebrating the first press of green Nabali olives from century-old groves in Ajloun and heirloom squash from the Jordan Valley.',
+    chefTastingNotes: 'This Friday represents the peak of our autumn transition. We hand-gathered sumac berries from the Jerash hills and cold-pressed our initial batch of olive oil yesterday evening.',
+    courses: [
+      {
+        category: 'starters',
+        title: 'Starters & Mezze',
+        arabicTitle: 'المقبلات الريفية',
+        subtitle: 'Wild herbs, fresh labneh, and hearth-baked taboon bread',
+        items: [
+          {
+            id: 'm42-s1',
+            name: 'First-Press Nabali Olive & Wild Thyme Tapenade',
+            arabicName: 'تبيل الزيتون النبالي والزعتر البري',
+            description: 'Green olives from 300-year-old Ajloun groves crushed with wild mountain thyme, toasted pine nuts, and sea salt.',
+            origin: 'Ajloun Highlands (Organic Farmstead #14)',
+            keyIngredients: ['Ajloun Green Olives', 'Wild Thyme', 'Raw Garlic', 'Wood-Fired Pine Nuts'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            beveragePairing: {
+              name: 'Wild Sage & Citrus Botanical Tonic',
+              description: 'Infused with mountain sage harvested at sunrise.',
+            },
+            placeholder: {
+              label: 'First-Press Nabali Olive Tapenade',
+              dimensions: '800 × 600',
+              motif: 'olive_grove',
+            },
+          },
+          {
+            id: 'm42-s2',
+            name: 'Charred Jordan Valley Heirloom Tomato Carpaccio',
+            arabicName: 'كارباتشيو الطماطم البلدية المشوية',
+            description: 'Organic sun-ripened heritage tomatoes charred over olive wood embers, served over whipped goat labneh and sumac glaze.',
+            origin: 'Jordan Valley (Al-Ghor Certified Organic Basin)',
+            keyIngredients: ['Heritage Ghor Tomatoes', 'Artisanal Goat Labneh', 'Wild Ajloun Sumac', 'Cold-Pressed Olive Oil'],
+            dietary: ['organic', 'vegetarian', 'gluten-free'],
+            beveragePairing: {
+              name: 'Fermented Pomegranate & Mint Spritzer',
+              description: 'Tart Jordan Valley pomegranate with garden spearmint.',
+            },
+            placeholder: {
+              label: 'Charred Valley Heirloom Tomatoes',
+              dimensions: '800 × 600',
+              motif: 'valley_harvest',
+            },
+          },
+        ],
+      },
+      {
+        category: 'mains',
+        title: 'Principal Courses',
+        arabicTitle: 'الأطباق الرئيسية',
+        subtitle: 'Slow wood-fired preparations honoring Levantine culinary roots',
+        items: [
+          {
+            id: 'm42-m1',
+            name: 'Clay-Pot Green Wheat Freekeh with Forest Mushrooms',
+            arabicName: 'فخارة الفريكة البلدية مع فطر الغابات',
+            description: 'Sun-dried green freekeh gently simmered for six hours in rich vegetable court-bouillon with wild pine forest chanterelles and caramelized shallots.',
+            origin: 'Irbid Plains & Ajloun Forest Reserve',
+            keyIngredients: ['Ancient Green Freekeh', 'Forest Mushrooms', 'Ajloun Shallots', 'Toasted Almonds'],
+            dietary: ['organic', 'vegan', 'dairy-free'],
+            beveragePairing: {
+              name: 'Oak-Smoked Grape Must Reduction',
+              description: 'Rich non-alcoholic vintage made from heirloom Baladi grapes.',
+            },
+            placeholder: {
+              label: 'Slow-Simmered Freekeh in Artisanal Clay Pot',
+              dimensions: '1200 × 800',
+              motif: 'plated_gourmet',
+            },
+          },
+          {
+            id: 'm42-m2',
+            name: 'Wood-Hearth Stuffed Baby Zucchini & Vine Leaves',
+            arabicName: 'كوسا وورق دوالي محشي على الحطب',
+            description: 'Tender tender organic leaves filled with organic short-grain rice, chopped mint, sweet onions, and bathed in a lemon-sumac emulsion.',
+            origin: 'Jerash Terraces & Dead Sea Mineral Springs',
+            keyIngredients: ['Hand-Picked Vine Leaves', 'Baby Courgettes', 'Fresh Mint', 'Dead Sea Mineral Salt'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            beveragePairing: {
+              name: 'Chilled Sumac & Wild Rose Nectar',
+              description: 'Delicately sweetened with Jordanian raw wildflower honey.',
+            },
+            placeholder: {
+              label: 'Wood-Fired Hearth Stuffed Vine Leaves',
+              dimensions: '1200 × 800',
+              motif: 'ancient_terroir',
+            },
+          },
+        ],
+      },
+      {
+        category: 'dessert',
+        title: 'Sweet Conclusion',
+        arabicTitle: 'التحلية والختام',
+        subtitle: 'Subtle natural sweetness drawn from local orchards and hives',
+        items: [
+          {
+            id: 'm42-d1',
+            name: 'Dead Sea Mineral Salted Wildflower Honey Tart',
+            arabicName: 'تارت عسل السدر مع ملح البحر الميت',
+            description: 'Crisp almond flour crust filled with amber Sidr honey ganache, sprinkled with coarse hand-harvested Dead Sea salt flakes.',
+            origin: 'Dead Sea Basin & Shobak Apiary',
+            keyIngredients: ['Wild Sidr Honey', 'Almond Flour', 'Dead Sea Salt Flakes', 'Olive Oil Emulsion'],
+            dietary: ['organic', 'vegetarian', 'gluten-free'],
+            beveragePairing: {
+              name: 'Cardamom & Mastic Mountain Tea',
+              description: 'Slow brewed over glowing charcoal.',
+            },
+            placeholder: {
+              label: 'Dead Sea Salted Honey Tart',
+              dimensions: '800 × 600',
+              motif: 'plated_gourmet',
+            },
+          },
+        ],
+      },
+      {
+        category: 'pairings',
+        title: 'Botanical Pairings',
+        arabicTitle: 'المشروبات النباتية',
+        subtitle: 'Artisanal syrups, wild decoctions, and floral elixirs',
+        items: [
+          {
+            id: 'm42-p1',
+            name: 'Ajloun Forest Rosemary & Sparkling Apple Cider',
+            arabicName: 'سيدر التفاح الفوار مع إكليل الجبل',
+            description: 'Unfiltered organic mountain apple cider infused with piney fresh rosemary and finished with carbonated spring water.',
+            origin: 'Ajloun Highlands Orchards',
+            keyIngredients: ['Mountain Apples', 'Fresh Rosemary', 'Ajloun Natural Spring Water'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            placeholder: {
+              label: 'Botanical Sparkling Elixir',
+              dimensions: '800 × 600',
+              motif: 'valley_harvest',
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'edition-43',
+    weekNumber: 43,
+    seasonName: 'Late Autumn Hearth Edition',
+    activeFridayDate: '2026-10-30',
+    activeFridayFormatted: 'Friday, October 30, 2026',
+    themeSummary: 'A deeper exploration of smoked grains, winter root vegetables from the Ghor basin, and mountain herbal infusions.',
+    chefTastingNotes: 'Next Friday our hearth will focus on slow-charred winter greens and Jerusalem artichokes roasted in olive wood coals.',
+    courses: [
+      {
+        category: 'starters',
+        title: 'Starters & Mezze',
+        arabicTitle: 'المقبلات الريفية',
+        subtitle: 'Earthy warmth to welcome the late autumn breeze',
+        items: [
+          {
+            id: 'm43-s1',
+            name: 'Charred Leek & Smoked Tahini Velouté',
+            arabicName: 'شوربة الكراث المشوي مع الطحينة البلدية',
+            description: 'Valley leeks charred directly on coals, blended with stone-ground sesame tahini and topped with crispy wild zaatar crumbles.',
+            origin: 'Salt Terraces & Jordan Valley',
+            keyIngredients: ['Heritage Leeks', 'Stone-Ground Tahini', 'Mountain Zaatar', 'Lemon Juice'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            placeholder: {
+              label: 'Smoked Tahini Veloute Presentation',
+              dimensions: '800 × 600',
+              motif: 'ancient_terroir',
+            },
+          },
+        ],
+      },
+      {
+        category: 'mains',
+        title: 'Principal Courses',
+        arabicTitle: 'الأطباق الرئيسية',
+        subtitle: 'Root harvest and hearth-roasted ancient pulses',
+        items: [
+          {
+            id: 'm43-m1',
+            name: 'Wood-Roasted Kabsa with Spiced Autumn Vegetables',
+            arabicName: 'كبسة الخضار الشتوية على الحطب',
+            description: 'Fragrant basmati cooked with black lime, cinnamon bark, roasted pumpkin wedges, and caramelized wild shallots.',
+            origin: 'Jordan Valley Organic Fields',
+            keyIngredients: ['Long-Grain Rice', 'Spiced Pumpkin', 'Black Lime', 'Charred Shallots'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            placeholder: {
+              label: 'Wood-Roasted Hearth Kabsa',
+              dimensions: '1200 × 800',
+              motif: 'plated_gourmet',
+            },
+          },
+        ],
+      },
+      {
+        category: 'dessert',
+        title: 'Sweet Conclusion',
+        arabicTitle: 'التحلية والختام',
+        subtitle: 'Warm orchard fruits and toasted seeds',
+        items: [
+          {
+            id: 'm43-d1',
+            name: 'Caramelized Black Fig & Mastic Semolina Cake',
+            arabicName: 'بسبوسة التين الأسود والمستكة',
+            description: 'Soft semolina crumb infused with Chios mastic tears, topped with warm poached figs and floral orange blossom syrup.',
+            origin: 'Jerash Foothills Orchard',
+            keyIngredients: ['Black Mission Figs', 'Semolina', 'Mastic', 'Orange Blossom Water'],
+            dietary: ['organic', 'vegetarian'],
+            placeholder: {
+              label: 'Caramelized Fig Semolina Gateau',
+              dimensions: '800 × 600',
+              motif: 'plated_gourmet',
+            },
+          },
+        ],
+      },
+      {
+        category: 'pairings',
+        title: 'Botanical Pairings',
+        arabicTitle: 'المشروبات النباتية',
+        subtitle: 'Warm spiced tonics for crisp evenings',
+        items: [
+          {
+            id: 'm43-p1',
+            name: 'Hot Spiced Pomegranate Mulled Elixir',
+            arabicName: 'شراب الرمان الدافئ بالتوابل العطرية',
+            description: 'Slow simmered pomegranate juice with Ceylon cinnamon, star anise, and citrus peel.',
+            origin: 'Ghor Pomegranate Groves',
+            keyIngredients: ['Pomegranate', 'Cinnamon', 'Star Anise', 'Dried Orange'],
+            dietary: ['organic', 'vegan', 'gluten-free', 'dairy-free'],
+            placeholder: {
+              label: 'Spiced Pomegranate Elixir',
+              dimensions: '800 × 600',
+              motif: 'valley_harvest',
+            },
+          },
+        ],
+      },
+    ],
+  },
+];
